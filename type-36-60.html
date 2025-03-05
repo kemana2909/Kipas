@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type 36/60 - Garden House Serpong</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="img/logo-gsh.png" alt="Logo Perumahan">
+            <span>Garden House Serpong</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <!-- Mobile Menu Header -->
+            <div class="mobile-menu-header">
+                <img src="img/logo-gsh.png" alt="Logo Perumahan">
+                <span>Garden House Serpong</span>
+            </div>
+            
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="index.html#type-rumah" class="active-menu">Type Rumah</a></li>
+            <li><a href="galeri.html#galeri">Galeri</a></li>
+            <li><a href="index.html#kontak">Kontak</a></li>
+            
+            <!-- Mobile Menu Contact Button -->
+            <div class="mobile-menu-contact">
+                <a href="#kontak" class="btn-contact">Hubungi Kami</a>
+            </div>
+        </ul>
+
+        <!-- Contact Button -->
+        <div class="contact-button">
+            <a href="#kontak" class="btn-contact">Hubungi Kami</a>
+        </div>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Property Detail Start -->
+    <section class="property-detail">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <div class="breadcrumb">
+                <a href="index.html">Beranda</a> &gt; 
+                <a href="index.html#type-rumah">Type Rumah</a> &gt; 
+                <span>Type 36/60</span>
+            </div>
+            
+            <!-- Property Title -->
+            <div class="property-title">
+                <h1>Type 36/60 (1 Lantai)</h1>
+                <p>Garden House Serpong, Gunung Sindur, Bogor</p>
+            </div>
+            
+            <!-- Property Gallery -->
+            <div class="property-gallery">
+                <div class="gallery-main">
+                    <img src="img/rumah1-desktop.webp" alt="Type 36/60" id="main-image">
+                    <!-- Gallery Navigation -->
+                    <div class="gallery-nav">
+                        <button class="prev-btn" onclick="changeSlide(-1)">❮</button>
+                        <button class="next-btn" onclick="changeSlide(1)">❯</button>
+                    </div>
+                </div>
+                
+                <div class="gallery-thumbs">
+                    <img src="img/rumah1-desktop.webp" alt="Type 36/60 - Tampak Depan" class="thumb active" onclick="setMainImage(this, 0)">
+                    <img src="img/rumah2-desktop.webp" alt="Type 36/60 - Interior" class="thumb" onclick="setMainImage(this, 1)">
+                    <img src="img/rumah3-desktop.webp" alt="Type 36/60 - Tampak Samping" class="thumb" onclick="setMainImage(this, 2)">
+                    <img src="img/rumah4-desktop.webp" alt="Type 36/60 - Taman" class="thumb" onclick="setMainImage(this, 3)">
+                </div>
+            </div>
+            
+            <!-- Property Brief Info -->
+            <div class="property-brief">
+                <div class="brief-item">
+                    <div class="icon">🛏️</div>
+                    <div class="info">
+                        <span class="value">2</span>
+                        <span class="label">Kamar Tidur</span>
+                    </div>
+                </div>
+                
+                <div class="brief-item">
+                    <div class="icon">🚿</div>
+                    <div class="info">
+                        <span class="value">1</span>
+                        <span class="label">Kamar Mandi</span>
+                    </div>
+                </div>
+                
+                <div class="brief-item">
+                    <div class="icon">🚗</div>
+                    <div class="info">
+                        <span class="value">1</span>
+                        <span class="label">Carport</span>
+                    </div>
+                </div>
+                
+                <div class="brief-item">
+                    <div class="icon">📏</div>
+                    <div class="info">
+                        <span class="value">60/36</span>
+                        <span class="label">LT/LB (m²)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Detail Property Section -->
+            <div class="detail-section">
+                <h2>Detail Properti</h2>
+                
+                <div class="detail-grid">
+                    <div class="detail-item">
+                        <div class="detail-label">Kondisi Perabotan</div>
+                        <div class="detail-value">Unfurnished</div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <div class="detail-label">Kamar Pembantu</div>
+                        <div class="detail-value">0</div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <div class="detail-label">Jumlah Lantai</div>
+                        <div class="detail-value">1</div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <div class="detail-label">Carport</div>
+                        <div class="detail-value">1</div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <div class="detail-label">Arah</div>
+                        <div class="detail-value">Utara</div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <div class="detail-label">Status Konstruksi</div>
+                        <div class="detail-value">Dalam Konstruksi</div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <div class="detail-label">Dibangun Tahun</div>
+                        <div class="detail-value">2023</div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <div class="detail-label">Sertifikasi</div>
+                        <div class="detail-value">SHM</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Property Description -->
+            <div class="property-description">
+                <h2>Mengenai Properti Ini</h2>
+                
+                <div class="description-content">
+                    <p>Dijual Rumah di Serpong Selatan dengan harga 499jt yang terdiri dari 2 kamar tidur dan 1 kamar mandi dengan luas tanah 60m² dan luas bangunan 36m². Sertifikasi rumah adalah Sertifikat Hak Milik.</p>
+                    
+                    <p>Dijual rumah di selatan serpong dengan lingkungan yang asri dan fasilitas perumahan yang lengkap. Cocok untuk hunian dan investasi. Start harga Rp499 juta.</p>
+                </div>
+            </div>
+            
+            <!-- Facilities Section -->
+            <div class="facilities-section">
+                <h2>Fasilitas</h2>
+                
+                <div class="facilities-content">
+                    <h3>Fasilitas Unit</h3>
+                    
+                    <div class="facilities-grid">
+                        <div class="facility-item">
+                            <div class="facility-icon">🏊</div>
+                            <div class="facility-name">Swimming Pool</div>
+                        </div>
+                        
+                        <div class="facility-item">
+                            <div class="facility-icon">💪</div>
+                            <div class="facility-name">Gym</div>
+                        </div>
+                        
+                        <div class="facility-item">
+                            <div class="facility-icon">🔒</div>
+                            <div class="facility-name">24 Hours Security</div>
+                        </div>
+                        
+                        <div class="facility-item">
+                            <div class="facility-icon">☕</div>
+                            <div class="facility-name">Cafe & Resto</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Location Section -->
+            <div class="location-section">
+                <h2>Lokasi dan Tempat Sekitar</h2>
+                
+                <div class="map-container" id="map">
+                    <!-- Maps akan ditampilkan di sini -->
+                </div>
+                
+                <div class="location-info">
+                    <p>15 menit ke Tol</p>
+                    <p>20 menit ke stasiun serpong</p>
+                    <p>30 menit ke AEON Mall</p>
+                    <p>20 menit ke UNPAM</p>
+                </div>
+            </div>
+            
+            <!-- Contact Section -->
+            <div class="contact-section" id="kontak">
+                <div class="agent-card">
+                    <div class="agent-photo">
+                        <img src="img/irene.jpg" alt="Foto Marketing">
+                    </div>
+                    <div class="agent-info">
+                        <h3>Endang Aprianto</h3>
+                        <p>Marketing Garden House Serpong</p>
+                        <a href="https://wa.me/6282211829825" class="whatsapp-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="16" height="16">
+                                <path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path>
+                            </svg>
+                            WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Property Detail End -->
+
+    <!-- Footer dengan Tiga Ikon Media Sosial - MULAI -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Kolom Kontak -->
+                <div class="footer-column footer-contact">
+                    <h3>Kontak Kami</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <span class="icon">📍</span>
+                            <span>Garden House Serpong, Jl. Pondok Jagung No.12, Serpong, Tangerang Selatan</span>
+                        </li>
+                        <li>
+                            <span class="icon">📱</span>
+                            <span>+62 812-3456-7890</span>
+                        </li>
+                        <li>
+                            <span class="icon">✉️</span>
+                            <span>info@gardenhouseserpong.com</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Kolom Link Navigasi -->
+                <div class="footer-column footer-links">
+                    <h3>Navigasi</h3>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="index.html#type-rumah">Type Rumah</a></li>
+                        <li><a href="index.html#galeri">Galeri</a></li>
+                        <li><a href="index.html#kontak">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Kolom Social Media -->
+                <div class="footer-column footer-social">
+                    <h3>Ikuti Kami</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon facebook-icon">
+                            <svg viewBox="0 0 320 512" width="16" height="16">
+                                <path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon instagram-icon">
+                            <svg viewBox="0 0 448 512" width="16" height="16">
+                                <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon whatsapp-icon">
+                            <svg viewBox="0 0 448 512" width="16" height="16">
+                                <path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright bar -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 Garden House Serpong. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer dengan Tiga Ikon Media Sosial - SELESAI -->
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        // Array untuk menyimpan semua gambar di galeri
+        const galleryImages = [
+            "img/rumah1-desktop.webp",
+            "img/rumah2-desktop.webp",
+            "img/rumah3-desktop.webp",
+            "img/rumah4-desktop.webp"
+        ];
+        
+        let currentImageIndex = 0;
+        
+        // Fungsi untuk mengatur gambar utama
+        function setMainImage(element, index) {
+            // Update gambar utama
+            document.getElementById("main-image").src = element.src;
+            currentImageIndex = index;
+            
+            // Update class active
+            const thumbs = document.querySelectorAll(".gallery-thumbs .thumb");
+            thumbs.forEach(thumb => thumb.classList.remove("active"));
+            element.classList.add("active");
+        }
+        
+        // Fungsi untuk mengubah slide
+        function changeSlide(step) {
+            currentImageIndex = (currentImageIndex + step + galleryImages.length) % galleryImages.length;
+            
+            // Update gambar utama
+            document.getElementById("main-image").src = galleryImages[currentImageIndex];
+            
+            // Update class active pada thumbnail
+            const thumbs = document.querySelectorAll(".gallery-thumbs .thumb");
+            thumbs.forEach((thumb, index) => {
+                if (index === currentImageIndex) {
+                    thumb.classList.add("active");
+                } else {
+                    thumb.classList.remove("active");
+                }
+            });
+        }
+        
+        // Inisialisasi peta OpenStreetMap
+        document.addEventListener("DOMContentLoaded", function() {
+            // Pastikan Leaflet CSS dan JS sudah dimuat
+            if (!document.getElementById('leaflet-css')) {
+                const link = document.createElement('link');
+                link.id = 'leaflet-css';
+                link.rel = 'stylesheet';
+                link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+                link.integrity = 'sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=';
+                link.crossOrigin = '';
+                document.head.appendChild(link);
+            }
+            
+            // Load Leaflet JS jika belum dimuat
+            if (typeof L === 'undefined') {
+                const script = document.createElement('script');
+                script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+                script.integrity = 'sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=';
+                script.crossOrigin = '';
+                script.onload = initMap;
+                document.body.appendChild(script);
+            } else {
+                initMap();
+            }
+        });
+        
+        // Inisialisasi peta
+        function initMap() {
+            const mapElement = document.getElementById('map');
+            if (!mapElement) return;
+            
+            // Koordinat lokasi properti
+            const lat = -6.3794550650547395;
+            const lng = 106.67413227026088;
+            
+            // Buat peta
+            const map = L.map('map').setView([lat, lng], 15);
+            
+            // Tambahkan tile layer
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+            
+            // Tambahkan marker
+            const marker = L.marker([lat, lng]).addTo(map);
+            
+            // Tambahkan popup
+            marker.bindPopup("<div style='text-align:center;'><strong>Garden House Serpong</strong><br>Type 36/60</div>").openPopup();
+        }
+    </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        mobileNavigation(); // Pastikan fungsi ini dipanggil di halaman detail
+    });
+</script>
+    
+</body>
+</html>

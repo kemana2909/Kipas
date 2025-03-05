@@ -1,0 +1,336 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+/* Gallery Container */
+.gallery-container {
+    background-color: #f9f8ee;
+    padding: 10px 0 40px;
+    position: relative;
+}
+
+/* Gallery Filter */
+.gallery-filter-wrapper {
+    background-color: #f9f8ee;
+    margin-bottom: 15px;
+    padding: 5px 0;
+    position: sticky;
+    top: 60px;
+    width: 100%;
+    z-index: 30;
+}
+
+.gallery-category-dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.dropdown-wrapper {
+    position: relative;
+    width: 250px;
+    max-width: 90%;
+}
+
+.dropdown-select {
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #006034;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+}
+
+.dropdown-select:hover {
+    background-color: rgba(0, 96, 52, 0.05);
+}
+
+.dropdown-select .selected-category {
+    color: #006034;
+    font-weight: 500;
+}
+
+.dropdown-select .dropdown-icon {
+    color: #006034;
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-wrapper.active .dropdown-select .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+.dropdown-list {
+    background-color: #ffffff;
+    border: 2px solid #006034;
+    border-radius: 20px;
+    border-top: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    max-height: 250px;
+    overflow-y: auto;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 31;
+}
+
+.dropdown-wrapper.active .dropdown-list {
+    display: block;
+}
+
+.dropdown-item {
+    color: #006034;
+    cursor: pointer;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(0, 96, 52, 0.1);
+}
+
+.dropdown-item.active {
+    background-color: #006034;
+    color: white;
+}
+
+.dropdown-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.dropdown-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.dropdown-list::-webkit-scrollbar-thumb {
+    background: #006034;
+    border-radius: 3px;
+}
+
+/* Gallery Grid */
+.gallery-items {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    padding: 0 15px;
+}
+
+.gallery-item {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-image {
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.gallery-image img {
+    cursor: pointer;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.gallery-item:hover .gallery-image img {
+    transform: scale(1.05);
+}
+
+.gallery-content {
+    flex-grow: 1;
+    padding: 15px;
+}
+
+.gallery-content h3 {
+    color: #006034;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.gallery-content p {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+/* Lightbox */
+.lightbox {
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    z-index: 2000;
+}
+
+.lightbox-content {
+    border: 3px solid white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: block;
+    left: 50%;
+    max-height: 85vh;
+    max-width: 90%;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lightbox-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 20px;
+    color: white;
+    left: 0;
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.lightbox-close {
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 2001;
+}
+
+.lightbox-prev,
+.lightbox-next {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    padding: 10px 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lightbox-prev {
+    left: 10px;
+}
+
+.lightbox-next {
+    right: 10px;
+}
+
+.lightbox-close:hover,
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #00e676;
+}
+
+/* Responsive Adjustments */
+.nav-active {
+    transform: translateX(0%) !important;
+}
+
+.toggle .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.toggle .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.container {
+    background-color: transparent;
+}
+
+@media (min-width: 1024px) {
+    .gallery-items {
+        gap: 15px;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    .gallery-filter-wrapper {
+        padding-top: 10px;
+        top: 85px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 1023px) {
+    .dropdown-wrapper {
+        width: 220px;
+    }
+    .gallery-items {
+        gap: 15px;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+    .gallery-image {
+        height: 180px;
+    }
+    .gallery-content h3 {
+        font-size: 1rem;
+    }
+    .gallery-content p {
+        font-size: 0.85rem;
+    }
+    .gallery-filter-wrapper {
+        padding: 50px 0 5px;
+        top: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dropdown-wrapper {
+        width: 200px;
+    }
+    .gallery-items {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+    .lightbox-prev,
+    .lightbox-next {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+    .gallery-filter-wrapper {
+        padding: 10px 0 5px;
+        top: 45px;
+    }
+}
